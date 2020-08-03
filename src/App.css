@@ -1,0 +1,205 @@
+body{
+  padding:0 !important;
+  margin:0 !important;
+  background:linear-gradient(180deg,lightgrey,#d3d3d3) !important;
+  background-attachment: fixed !important;
+  color:#000 !important;
+  /* transition: opacity .15s linear !important; */
+  font-family: 'Poppins', sans-serif !important;
+  
+}
+/* .custom_navbar{
+  background:linear-gradient(180deg,lightgrey,#d3d3d3) !important;
+} */
+#home_container{
+margin-bottom: 5rem !important;
+}
+.navbar-brand{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  /* color:  	#00964b !important; */
+  font-size: 2rem !important;
+  text-shadow: 5px 2px 5px #000000;
+}
+.nav-link{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500 !important;
+  font-size: 1.5rem !important;
+}
+.navbar_Collapse{
+  border-radius: 2rem !important;
+  border-color: rgb(219, 218, 218) !important;
+}
+.hoverEffect{
+  color:#fff !important;
+  border-bottom: 1px solid lightgray !important;
+  /* transition:  1s ease; */
+}
+.home_container{
+  margin-top:5rem !important;
+}
+.home_container .left_col{
+  margin-top:3rem;
+}
+.home_container .right_col{
+  margin-top:1.5rem !important;
+}
+.title{
+  margin-top: 1rem;
+}
+.desc{
+  margin-top: 2rem;
+}
+.btn-outline-dark{
+  border-radius: 2rem !important;
+  /* margin-top: 2rem; */
+  transition:0.7s !important;
+  /* background-color: aqua; */
+}
+#btnDark{
+  border-radius: 2rem !important;
+  transition:0.7s !important;
+}
+.home_container .animated{
+  animation:up-down 2s ease-in-out infinite alternate-reverse both;
+  border-radius: 2rem;
+}
+@-webkit-keyframes up-down{
+  0%{
+    transform:translateY(10px)
+  }
+  100%{
+    transform:translateY(-10px)
+  }
+}
+@keyframes up-down{
+  0%{
+    transform:translateY(10px)
+  }
+  100%{
+    transform:translateY(-10px)
+  }
+}
+
+/* Services */
+
+.CardStyle{
+  border-radius: 10px;
+  transition:0.5s ease;
+  cursor:pointer;
+}
+/* .CardStyle:hover{
+  transform:scale(1.1);
+    box-shadow:5px 5px 15px rgba(0,0,0,0.6);
+
+} */
+.CardStyle .movieTitle{
+  text-align: center;
+  font-weight: bolder;
+}
+.movieDesc{
+  text-align: justify;
+}
+.home_container .service_title,.home_container .service_title1{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+/* About */
+
+
+.homeDp {
+  width: 15%;
+  margin-top: 2rem;
+}
+.info {
+  text-indent: 80px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.st_font{
+  font-family: Poppins;
+  font-weight: 300;
+}
+.body_text{
+  background:linear-gradient(180deg,lightgrey,#d3d3d3) !important;
+  outline:none !important;
+}
+
+/* Contact */
+
+
+.title-text::placeholder,.control-label{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.title-text{
+  font-weight: bolder !important;
+  text-transform: capitalize;
+}
+.content-note{
+  text-transform: capitalize;
+  color:black !important;
+}
+.title-note{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.form-control{
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  /* border-bottom: 1px solid #ddd !important  ; */
+  text-transform: capitalize;
+  
+
+}
+.form-control:focus{
+  border-bottom: 1px solid #00558E !important;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  /* background-color: DarkSalmon; */
+  color: #000;
+}
+.fa {
+  
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none !important;
+  margin: 5px 2px;
+  border-radius: 50%;
+  color: #343a40;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color: #343a40;
+    
+}
+@media (max-width: 415px){
+  .name{
+    font-size:2.5rem;
+  }
+  .home_container .left_col{
+    margin-top:0rem;
+  }
+   /*
+  .home_container .right_col{
+    margin-top:1.5rem !important;
+  } */
+ .service_title1{
+    font-size: 1.5rem;
+  }
+}
+/* .footer{
+  display:flex;
+  justify-content:center;
+}
+.footer i{
+  line-height: 10px;
+} */
