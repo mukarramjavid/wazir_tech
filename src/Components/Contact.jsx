@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const [info, setInfo] = useState({
     fullname: "",
     email: "",
@@ -23,6 +24,7 @@ const Contact = () => {
   // submit form
   const handleSubmit = (event) => {
     event.preventDefault();
+    setIsLoading(true);
     emailjs
       .sendForm(
         "gmail",
@@ -33,11 +35,18 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setIsLoading(false)
         },
         (error) => {
           console.log(error.text);
         }
       );
+    setInfo({
+      fullname: "",
+      email: "",
+      phone: "",
+      msg: "",
+    });
     // alert(
     //   `${info.fullname} sent a "${info.msg}" to Mukarram Javid through this email ${info.email}`
     // );
@@ -104,13 +113,27 @@ const Contact = () => {
                   required
                 ></textarea>
               </div>
-              <button
-                type="submit"
-                className="btn btn-outline-dark"
-                id="btnDark"
-              >
-                Send message
-              </button>
+              {!isLoading && (
+                <button
+                  type="submit"
+                  className="btn btn-outline-dark"
+                  id="btnDark"
+                >
+                  Send message
+                </button>
+              )}
+              {isLoading && (
+                <button
+                  type="submit"
+                  className="btn btn-outline-dark"
+                  id="btnDark"
+                  disabled
+                >
+                  <div>
+                    <i class="fas fa-spinner fa-spin"></i> Sending ...
+                  </div>
+                </button>
+              )}
             </form>
           </Col>
           <Col md={3}></Col>
