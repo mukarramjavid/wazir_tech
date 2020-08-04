@@ -18,7 +18,7 @@ export default function Sidebar() {
             <NavLink
               activeClassName="hoverEffect"
               className="nav-link"
-              to="/service/our_services"
+              to="/service"
               exact
             >
               Services
