@@ -1,7 +1,7 @@
 const SData = [
   {
     id: "1",
-    title: "PHP/JavaScript",
+    title: "Angular/JavaScript",
     img: "images/pic1.jpg",
   },
   {
