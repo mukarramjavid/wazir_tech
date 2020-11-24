@@ -25,9 +25,7 @@ const Contact = () => {
   // submit form
   const handleSubmit = (event) => {
     event.preventDefault();
-    setIsLoading(true);
-    isSweetAlert(true);
-    
+    setIsLoading(true);    
     emailjs
       .sendForm(
         "gmail",
