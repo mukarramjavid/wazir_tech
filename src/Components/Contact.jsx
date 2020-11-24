@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import emailjs from "emailjs-com";
+import swal from '@sweetalert/with-react';
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -25,6 +26,8 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setIsLoading(true);
+    isSweetAlert(true);
+    
     emailjs
       .sendForm(
         "gmail",
