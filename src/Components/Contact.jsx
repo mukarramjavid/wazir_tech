@@ -136,14 +136,12 @@ const Contact = () => {
                   
                 </button>
                
-               
-              ) && 
-                swal({
+               swal({
                   title: "Good job!",
                   text: "Message Send Successfully!",
                   icon: "success",
                   })
-              }
+              )}
             </form>
           </Col>
           <Col md={3}></Col>
