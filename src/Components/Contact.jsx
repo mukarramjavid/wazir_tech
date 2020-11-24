@@ -132,8 +132,9 @@ const Contact = () => {
                   <div>
                     <i class="fas fa-spinner fa-spin"></i> Sending ...
                   </div>
-                  swal("Good job!", "Message Send Successfully!", "success");
+                  
                 </button>
+                swal("Good job!", "Message Send Successfully!", "success");
               )}
             </form>
           </Col>
