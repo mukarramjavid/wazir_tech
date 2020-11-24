@@ -134,13 +134,13 @@ const Contact = () => {
                     <i class="fas fa-spinner fa-spin"></i> Sending ...
                   </div>
                   
-                </button>,
+                </button>
                
-               swal({
-                  title: "Good job!",
-                  text: "Message Send Successfully!",
-                  icon: "success",
-                  })
+               //swal({
+                //  title: "Good job!",
+                  //text: "Message Send Successfully!",
+                  //icon: "success",
+                  //})
               )}
             </form>
           </Col>
