@@ -134,7 +134,13 @@ const Contact = () => {
                   </div>
                   
                 </button>
-                swal("Good job!", "Message Send Successfully!", "success");
+                swal({
+                  title: "Good job!",
+                  text: "Message Send Successfully!",
+                  icon: "success",
+                  
+                });
+               
               )}
             </form>
           </Col>
