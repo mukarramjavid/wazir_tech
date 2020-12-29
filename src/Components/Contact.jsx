@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import emailjs from "emailjs-com";
-//import swal from '@sweetalert/with-react';
+import swal from '@sweetalert/with-react';
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -142,7 +142,16 @@ const Contact = () => {
                   //icon: "success",
                   //})
               ) &&
-              alert('Your message has been sent.')
+                swal({
+
+                title: "Good job!",
+
+                  text: "Message Send Successfully!",
+
+                  icon: "success",
+
+                  })
+              //alert('Your message has been sent.')
               }
             </form>
           </Col>
