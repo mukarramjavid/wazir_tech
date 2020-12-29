@@ -141,8 +141,9 @@ const Contact = () => {
                   //text: "Message Send Successfully!",
                   //icon: "success",
                   //})
-              )
-              alert('Your message has been sent.'}
+              ) &&
+              alert('Your message has been sent.')
+              }
             </form>
           </Col>
           <Col md={3}></Col>
