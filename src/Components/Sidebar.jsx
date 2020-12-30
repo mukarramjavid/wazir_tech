@@ -29,6 +29,9 @@ export default function Sidebar() {
               to="/about"
             >
               About
+                <Badge pill variant="info">
+    New
+  </Badge>
             </NavLink>
             <NavLink
               activeClassName="hoverEffect"
