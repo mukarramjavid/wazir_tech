@@ -142,15 +142,6 @@ const Contact = () => {
                   //icon: "success",
                   //})
               ) &&
-              //  swal({
-
-               // title: "Good job!",
-
-                 // text: "Message Send Successfully!",
-
-                  //icon: "success",
-
-                  //})
               alert('Your message has been sent.')
               }
             </form>
