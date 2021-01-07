@@ -126,7 +126,7 @@ const Contact = () => {
                 >
                   Send message
                 </button>
-              )}
+              )}{" "}
               {!isLoading && (<Badge pill variant="success">{success}</Badge>)}
               {isLoading && (
                 <button
