@@ -38,18 +38,19 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setIsLoading(false)
+          setInfo({
+             fullname: "",
+             email: "",
+             phone: "",
+             msg: "",
+          });
           setSuccess(result.text)
         },
         (error) => {
           console.log(error.text);
         }
       );
-    setInfo({
-      fullname: "",
-      email: "",
-      phone: "",
-      msg: "",
-    });
+    
     // alert(
     //   `${info.fullname} sent a "${info.msg}" to Mukarram Javid through this email ${info.email}`
     // );
