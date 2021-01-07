@@ -61,7 +61,7 @@ const Contact = () => {
           <h1 className="service_title1">Leave a message</h1>
         </Col>
         <hr />
-        <span className="text-center alert alert-success">{success}</span>
+        {!IsLoading && (<span className="text-center alert alert-success">{success}</span>)}
         <Row>
           <Col md={3}></Col>
           <Col md={6}>
