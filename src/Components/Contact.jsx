@@ -61,6 +61,7 @@ const Contact = () => {
           <h1 className="service_title1">Leave a message</h1>
         </Col>
         <hr />
+        <span className="text-center alert alert-success">{success}</span>
         <Row>
           <Col md={3}></Col>
           <Col md={6}>
@@ -143,9 +144,7 @@ const Contact = () => {
                   //text: "Message Send Successfully!",
                   //icon: "success",
                   //})
-              ) &&
-              alert({success})
-              }
+              )}
             </form>
           </Col>
           <Col md={3}></Col>
