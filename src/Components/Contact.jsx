@@ -50,7 +50,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-    
+    setTimeout(() =>{setSuccess('')}, 5000) 
     // alert(
     //   `${info.fullname} sent a "${info.msg}" to Mukarram Javid through this email ${info.email}`
     // );
