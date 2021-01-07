@@ -59,8 +59,13 @@ const Contact = () => {
       <Container className="home_container">
         <Col md={12} sm={12} xs={12}>
           <h1 className="service_title1">Leave a message</h1>
-           {!isLoading && (<Badge pill variant="success">{success}</Badge>)}
+           
         </Col>
+        <Row>
+        <Col md={5} sm={5} xs={12}></Col>
+        <Col md={2} sm={2} xs={12}>{!isLoading && (<Badge pill variant="success">{success}</Badge>)}</Col>
+        <Col md={5} sm={5} xs={12}></Col>
+        </Row>
         <hr />
        
         <Row>
