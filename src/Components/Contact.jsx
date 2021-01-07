@@ -5,6 +5,7 @@ import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const [success, setSuccess] = useState('');
   const [info, setInfo] = useState({
     fullname: "",
     email: "",
@@ -37,6 +38,7 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setIsLoading(false)
+          result.text=="OK"??setSuccess("Sent Successfully")
         },
         (error) => {
           console.log(error.text);
@@ -142,7 +144,7 @@ const Contact = () => {
                   //icon: "success",
                   //})
               ) &&
-              alert('Your message has been sent.')
+              alert({success})
               }
             </form>
           </Col>
