@@ -59,9 +59,10 @@ const Contact = () => {
       <Container className="home_container">
         <Col md={12} sm={12} xs={12}>
           <h1 className="service_title1">Leave a message</h1>
+           {!isLoading && (<span className="text-center text-bolder text-success">{success}</span>)}
         </Col>
         <hr />
-        {!isLoading && (<span className="text-center text-bolder text-success">{success}</span>)}
+       
         <Row>
           <Col md={3}></Col>
           <Col md={6}>
