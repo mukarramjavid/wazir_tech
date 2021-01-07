@@ -38,7 +38,7 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setIsLoading(false)
-          result.text==="OK"??setSuccess("Sent Successfully")
+          setSuccess(result.text)
         },
         (error) => {
           console.log(error.text);
