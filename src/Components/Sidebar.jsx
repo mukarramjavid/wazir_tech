@@ -29,16 +29,16 @@ export default function Sidebar() {
               to="/about"
             >
               About
-                <Badge pill variant="info">
-    New
-  </Badge>
+                
             </NavLink>
             <NavLink
               activeClassName="hoverEffect"
               className="nav-link"
               to="/contact"
             >
-              Contact
+              Contact <Badge pill variant="info">
+    New
+  </Badge>
             </NavLink>
           </Nav>
         </Navbar.Collapse>
