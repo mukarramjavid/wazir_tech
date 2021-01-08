@@ -44,7 +44,7 @@ const Contact = () => {
              phone: "",
              msg: "",
           });
-          setSuccess(result.text)
+          setSuccess('Good job!! Message has been sent.')
         },
         (error) => {
           console.log(error.text);
