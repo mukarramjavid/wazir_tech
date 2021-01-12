@@ -85,6 +85,7 @@ const Contact = () => {
                 <label className="control-label">Email:</label>
                 <input
                   type="Email"
+                  autoComplete="off"
                   placeholder="xyz@example.com"
                   className="form-control"
                   name="email"
@@ -97,6 +98,7 @@ const Contact = () => {
                 <label className="control-label">Telephone:</label>
                 <input
                   type="number"
+                  autoComplete="off"
                   placeholder="Your phone Number here..."
                   className="form-control"
                   name="phone"
@@ -109,6 +111,7 @@ const Contact = () => {
                 <label className="control-label">Message:</label>
                 <textarea
                   type="text"
+                  autoComplete="off"
                   className="form-control"
                   rows=""
                   col=""
