@@ -19,7 +19,11 @@ const App = () => {
     <>
       <BrowserRouter>
         <Sidebar />
-       <Suspense fallback={<div>Loading...</div>}>
+       <Suspense fallback={<div className=""><img
+              src="./images/loader.gif"
+              alt="myPic"
+             
+            /></div>}>
           <Switch>
             <Route path="/" exact component={Home} />
             <Route exact path="/service" component={Service} />
