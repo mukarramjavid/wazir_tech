@@ -11,7 +11,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const Home = lazy(() => import('./Components/Home'));
 const About = lazy(() => import('./Components/About'));
-const Service = lazy(() => import('./Components/Service'));
+const Service = lazy(() => import('./Components/Services'));
 const Contact = lazy(() => import('./Components/Contact'));
 const App = () => {
   return (
