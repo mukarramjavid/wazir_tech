@@ -19,8 +19,8 @@ const App = () => {
     <>
       <BrowserRouter>
         <Sidebar />
-       <Suspense fallback={<div className=""><img
-              src="./images/loader.gif"
+       <Suspense fallback={<div className="loader_img"><img
+              src="./images/loader1.gif"
               alt="myPic"
              
             /></div>}>
