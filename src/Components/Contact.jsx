@@ -5,6 +5,7 @@ import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setIsError] = useState(false);
   const [success, setSuccess] = useState('');
   const [info, setInfo] = useState({
     fullname: "",
@@ -47,7 +48,8 @@ const Contact = () => {
           setSuccess('Good job!! Message has been sent.')
         },
         (error) => {
-          console.log(error.text);
+          setIsError(true);
+          setSuccess('Oops!! Message has not been sent 🤐.')
         }
       );
     setTimeout(() =>{setSuccess('')}, 10000) 
@@ -131,7 +133,7 @@ const Contact = () => {
                   Send message
                 </button>
               )}{" "}
-              {!isLoading && (<Badge pill variant="success">{success}</Badge>)}
+              {!isLoading && (<Badge pill variant={!error?"success":"danger"}>{success}</Badge>)}
               {isLoading && (
                 <button
                   type="submit"
